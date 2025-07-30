@@ -1,0 +1,34 @@
+
+{ 
+  "productos": [
+      {
+        "nombre": "Paquete Donas Azucaradas",
+        "descripcion": "Disfrutá el sabor casero en cada bocado con nuestro paquete de 5 donas. Suaves, esponjosas, ideales para compartir o consentirte.",
+        "precio": 65,
+        "imagen": "assets/donuts.jpeg",
+        "disponible": true
+      },
+      {
+      "nombre": "Arroz con Leche en vaso ",
+        "descripcion": "Postre tradicional, cremoso y lleno de sabor. Servido en vaso individual, listo para disfrutar.",
+        "precio": 35,
+        "imagen": "assets/arrozleche.jpeg",
+        "disponible": true
+      },
+      {
+        "nombre": "Paquete Tacos de Pollo Jumbo Congelados",
+        "descripcion": "Tortillas rellenas de pollo sazonado con el toque perfecto. Vienen listos para freír y disfrutar en minutos. ¡Llevás 5 tacos, prácticos y deliciosos!",
+        "precio": 180,
+        "imagen": "assets/tacos.jpeg",
+        "disponible": false
+      },
+      {
+        "nombre": "Paquete Pastelitos de Carne Congelados",
+        "descripcion": "Disfrutá el auténtico sabor casero en cada bocado. Pastelitos elaborados con masa de maíz y rellenos de carne. Empacados y congelados, listos para freír y servir contiene 6 pastelitos.",
+        "precio": 120,
+        "imagen": "assets/pastelitos.jpeg",
+        "disponible": false
+      }
+    ]
+  }
+  
