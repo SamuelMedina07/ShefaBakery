@@ -29,7 +29,7 @@ header {
 }
 
 header img {
-  height: 150px; /* más grande */
+  height: 250px; /* más grande */
 }
 
 header h1 {
@@ -184,7 +184,7 @@ footer .social-links a:hover {
   }
 
   header img {
-    height: 150px;
+    height: 250px;
   }
 
   header h1 {
