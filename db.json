@@ -13,7 +13,7 @@
         "descripcion": "Postre tradicional, cremoso y lleno de sabor. Servido en vaso individual, listo para disfrutar.",
         "precio": 35,
         "imagen": "assets/arrozleche.jpeg",
-        "disponible": true
+        "disponible": false
       },
       {
         "nombre": "Paquete Tacos de Pollo Jumbo Congelados",

@@ -17,6 +17,7 @@ function cambiarCantidad(index, delta) {
   cantidadSpan.textContent = cantidad;
 }
 
+
   
   fetch('db.json')
   .then(response => {
@@ -37,6 +38,8 @@ function cambiarCantidad(index, delta) {
   const botonDeshabilitado = producto.disponible ? "" : "disabled";
   const claseBoton = producto.disponible ? "btn-activo" : "btn-inactivo";
   const textoBoton = producto.disponible ? "Pedir por WhatsApp" : "No disponible";
+  const polldonuts = producto.nombre === "Paquete Donas Azucaradas" ? "" : "disabled";
+
 
       div.innerHTML = `
       <div class="card">
@@ -55,6 +58,7 @@ function cambiarCantidad(index, delta) {
        <button class="${claseBoton}" onclick="orderProduct('${producto.nombre}', ${index})" ${botonDeshabilitado}>
       ${textoBoton}
     </button>
+     <button class="btn-encuesta" onclick="abrirModal()" ${polldonuts} ${botonDeshabilitado} >Responder encuesta</button>
         </div>
       `;
       container.appendChild(div);
@@ -64,3 +68,39 @@ function cambiarCantidad(index, delta) {
     document.getElementById("productos-container").innerText = "Error cargando los productos.";
     console.error(error);
   });
+
+  // Abrir y cerrar modal
+function abrirModal() {
+  document.getElementById("modal-encuesta").style.display = "block";
+}
+
+function cerrarModal() {
+  document.getElementById("modal-encuesta").style.display = "none";
+}
+
+// Enviar encuesta desde modal
+document.getElementById("form-encuesta").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+  const mensaje = document.getElementById("mensaje-encuesta");
+
+  try {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbw-Mn7aL-c1HmSRdoLhcCHm1MvgQyzoFoJgE9E8X4DctCkIBsH6oFKGoLjkYb7zF76c/exec", {
+      method: "POST",
+      body: formData
+    });
+
+    if (response.ok) {
+      mensaje.textContent = "¡Gracias por tu opinión!";
+      form.reset();
+      setTimeout(() => cerrarModal(), 2000);
+    } else {
+      mensaje.textContent = "Error al enviar.";
+    }
+  } catch (err) {
+    mensaje.textContent = "Error de conexión.";
+    console.error(err);
+  }
+});
