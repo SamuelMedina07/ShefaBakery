@@ -18,7 +18,7 @@
       {
         "nombre": "Paquete Tacos de Pollo Jumbo Congelados",
         "descripcion": "Tortillas rellenas de pollo sazonado con el toque perfecto. Vienen listos para freír y disfrutar en minutos. ¡Llevás 5 tacos, prácticos y deliciosos!",
-        "precio": 180,
+        "precio": 140,
         "imagen": "assets/tacos.jpeg",
         "disponible": true
       },
