@@ -5,7 +5,7 @@
         "nombre": "Paquete Donas Azucaradas",
         "descripcion": "Disfrutá el sabor casero en cada bocado con nuestro paquete de 5 donas. Suaves, esponjosas, ideales para compartir o consentirte.",
         "precio": 65,
-        "imagen": "assets/donuts.jpeg",
+        "imagen": "assets/dona.jpeg",
         "disponible": true
       },
       {
@@ -13,14 +13,14 @@
         "descripcion": "Postre tradicional, cremoso y lleno de sabor. Servido en vaso individual, listo para disfrutar.",
         "precio": 35,
         "imagen": "assets/arrozleche.jpeg",
-        "disponible": true
+        "disponible": false
       },
       {
         "nombre": "Paquete Tacos de Pollo Jumbo Congelados",
         "descripcion": "Tortillas rellenas de pollo sazonado con el toque perfecto. Vienen listos para freír y disfrutar en minutos. ¡Llevás 5 tacos, prácticos y deliciosos!",
         "precio": 180,
         "imagen": "assets/tacos.jpeg",
-        "disponible": false
+        "disponible": true
       },
       {
         "nombre": "Paquete Pastelitos de Carne Congelados",

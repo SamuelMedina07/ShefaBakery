@@ -29,7 +29,9 @@ function cambiarCantidad(index, delta) {
     const container = document.getElementById("productos-container");
     container.innerHTML = ""; // Limpia el texto "Cargando productos..."
     
-
+    data.productos.sort((a, b) => {
+  return (b.disponible === true) - (a.disponible === true);
+});
      data.productos.forEach((producto,index) => {
       const div = document.createElement("div");
       div.className = "producto";
